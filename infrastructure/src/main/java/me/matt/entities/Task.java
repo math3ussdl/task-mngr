@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@Entity
+@Entity(name = "tasks")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
