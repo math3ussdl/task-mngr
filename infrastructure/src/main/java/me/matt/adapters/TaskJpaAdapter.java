@@ -1,12 +1,12 @@
-package adapters;
+package me.matt.adapters;
 
-import data.TaskDto;
-import entities.Task;
-import mappers.TaskMapper;
+import me.matt.data.TaskDto;
+import me.matt.entities.Task;
+import me.matt.mappers.TaskMapper;
+import me.matt.ports.spi.ITaskPersistencePort;
+import me.matt.repositories.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ports.spi.ITaskPersistencePort;
-import repositories.TaskRepository;
 
 import java.util.List;
 import java.util.Optional;

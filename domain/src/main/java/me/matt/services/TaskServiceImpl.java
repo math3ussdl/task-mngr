@@ -1,8 +1,8 @@
-package services;
+package me.matt.services;
 
-import data.TaskDto;
-import ports.api.ITaskServicePort;
-import ports.spi.ITaskPersistencePort;
+import me.matt.data.TaskDto;
+import me.matt.ports.api.ITaskServicePort;
+import me.matt.ports.spi.ITaskPersistencePort;
 
 import java.util.List;
 

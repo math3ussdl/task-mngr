@@ -1,7 +1,7 @@
-package mappers;
+package me.matt.mappers;
 
-import data.TaskDto;
-import entities.Task;
+import me.matt.data.TaskDto;
+import me.matt.entities.Task;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
