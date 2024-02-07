@@ -1,9 +1,6 @@
 package me.matt.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,7 +19,22 @@ public class Task {
     private Long id;
 
     private String description;
-    private boolean isActive;
+
+    private boolean isActive = true;
+
     private Date createdAt;
+
     private Date updatedAt;
+
+    @PrePersist
+    void preInsert() {
+        if (this.createdAt == null) {
+            this.createdAt = new Date();
+        }
+    }
+
+    @PreUpdate
+    void preUpdate() {
+        this.updatedAt = new Date();
+    }
 }

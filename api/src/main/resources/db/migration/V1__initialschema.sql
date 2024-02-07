@@ -1,5 +1,5 @@
 CREATE TABLE tasks (
-    id BIGINT NOT NULL,
+    id BIGINT NOT NULL auto_increment,
     description VARCHAR(100) NOT NULL,
     isActive SMALLINT,
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
