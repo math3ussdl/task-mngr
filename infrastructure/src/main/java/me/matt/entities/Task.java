@@ -20,7 +20,7 @@ public class Task {
 
     private String description;
 
-    private boolean isActive = true;
+    private boolean active;
 
     private Date createdAt;
 

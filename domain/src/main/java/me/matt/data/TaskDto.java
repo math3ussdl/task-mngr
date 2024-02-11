@@ -14,7 +14,7 @@ import java.util.Date;
 public class TaskDto {
     private Long id;
     private String description;
-    private boolean isActive;
+    private boolean active;
     private Date createdAt;
     private Date updatedAt;
 }

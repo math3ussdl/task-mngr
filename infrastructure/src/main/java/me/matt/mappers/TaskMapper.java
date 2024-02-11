@@ -3,6 +3,7 @@ package me.matt.mappers;
 import me.matt.data.TaskDto;
 import me.matt.entities.Task;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
